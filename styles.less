@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter'
+}
+
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 5rem;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    display: flex;
+    text-align: center;
+}
+
+.active-list-item {
+    color: #111827 !important;
+}
+
+.list-item-nav {
+    font-style: normal;
+    text-decoration: none;
+    color: #4B5563;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    align-items: center;
+    background: #111827;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.main-container-mobile {
+    display: none;
+}
+
+.content-nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    list-style: none;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon div {
+      display: block;
+    }
+
+    .main-container-mobile {
+        display: block;
+        height: 220px;
+    }
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+   
+  .right-side h1 {
+    margin-top: 4rem;
+    font-size: 60px;
+    font-weight: 700;
+    color: #111827
+  }
+
+  .right-side p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6D7280;
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .slider-image {
+    width: 600px;
+    height: 500px;
+    background-size: cover;
+  }
