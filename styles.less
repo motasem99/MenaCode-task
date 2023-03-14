@@ -146,12 +146,14 @@
   }
 
   .owl-carousel .prev-slide {
-    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11) no-repeat scroll 0 0;
+    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11)
+      no-repeat scroll 0 0;
     left: -33px;
   }
 
   .owl-carousel .next-slide {
-    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11) no-repeat scroll -24px 0px;
+    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11)
+      no-repeat scroll -24px 0px;
     right: -33px;
   }
 
@@ -197,45 +199,46 @@
 
 /* Container Style */
 
+.header-title {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+  h1 {
+    color: #111827;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 140%;
+    padding-top: 3rem;
+  }
+
+  .contentPara {
+    display: flex;
+    justify-content: center;
+
+    p {
+      width: 60%;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #6d7280;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 .main-container {
   width: 80%;
   margin: 0 auto;
 
   .about-container {
     padding: 1rem;
-    margin-top: 2rem;
-
-    .header-about {
-      text-align: center;
-
-      h1 {
-        color: #111827;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 140%;
-      }
-
-      .contentPara {
-        display: flex;
-        justify-content: center;
-
-        p {
-          width: 60%;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 24px;
-          color: #6d7280;
-          margin-top: 1rem;
-          margin-bottom: 2rem;
-        }
-      }
-    }
 
     .body-about {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 2rem;
 
       img {
         width: 450px;
@@ -260,6 +263,44 @@
           line-height: 150%;
           color: #6d7280;
         }
+      }
+    }
+  }
+}
+
+.services-container {
+  background-color: #f9fafb;
+
+  .header-title();
+
+  .container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+
+      h4 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #111827;
+        margin-top: 1rem;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #6d7280;
+        margin-top: 1rem;
       }
     }
   }
