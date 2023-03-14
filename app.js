@@ -3,12 +3,16 @@ function toggleMobileMenu(menu) {
 }
 
 $('.owl-carousel').owlCarousel({
-  loop: true,
+  // loop: true,
   margin: 10,
-  nav: false,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  autoplayHoverPause: true,
+  // autoplay: true,
+  nav: true,
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
+  // autoplayTimeout: 2000,
+  // autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
