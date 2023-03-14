@@ -132,37 +132,28 @@
   position: relative;
 
   .owl-carousel .nav-btn {
-    height: 47px;
+    height: 48px;
     position: absolute;
-    width: 26px;
+    width: 50px;
     cursor: pointer;
     top: 180px !important;
+    background-color: #1f2937;
   }
 
   .owl-carousel .owl-prev.disabled,
   .owl-carousel .owl-next.disabled {
     pointer-events: none;
-    opacity: 0.2;
+    background-color: #1f2937;
   }
 
   .owl-carousel .prev-slide {
-    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11)
-      no-repeat scroll 0 0;
-    left: -33px;
+    background: url(images/next.svg) no-repeat scroll 0 0;
+    left: -86px;
   }
 
   .owl-carousel .next-slide {
-    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png?ezimgfmt=ng%3Awebp%2Fngcb11)
-      no-repeat scroll -24px 0px;
-    right: -33px;
-  }
-
-  .owl-carousel .prev-slide:hover {
-    background-position: 0px -53px;
-  }
-
-  .owl-carousel .next-slide:hover {
-    background-position: -24px -53px;
+    background: url(images/prev.svg) no-repeat scroll 0px 0px;
+    right: -86px;
   }
 
   .item {
@@ -304,4 +295,8 @@
       }
     }
   }
+}
+
+.second-main-container {
+  .header-title();
 }
