@@ -13,6 +13,15 @@
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -444,13 +453,50 @@
           <h1>FAQs</h1>
           <div class="contentPara">
             <p>
-              At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.
+              At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis
+              cursus vestibulum, facilisi ac, sed faucibus.
             </p>
           </div>
+        </div>
+
+        <div class="according-container">
+          <div id="accordion">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna.
+              </p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna.
+              </p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna.
+              </p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
 
+    <script>
+      $('#accordion').accordion({
+        collapsible: true,
+        icons: { "header": "ui-icon-caret-1-s", "activeHeader": "ui-icon-caret-1-n" },
+      });
+    </script>
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="app.js"></script>
