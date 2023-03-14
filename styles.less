@@ -208,7 +208,7 @@
     justify-content: center;
 
     p {
-      width: 60%;
+      width: 40%;
       font-size: 20px;
       font-weight: 400;
       line-height: 24px;
@@ -259,6 +259,8 @@
   }
 }
 
+/* Services Style */
+
 .services-container {
   background-color: #f9fafb;
 
@@ -297,6 +299,95 @@
   }
 }
 
+/*  */
+
 .second-main-container {
   .header-title();
+
+  .carousel-wrap {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+
+    .owl-carousel .nav-btn {
+      height: 48px;
+      position: absolute;
+      width: 50px;
+      cursor: pointer;
+      top: 180px !important;
+      background-color: #1f2937;
+    }
+
+    .owl-carousel .owl-prev.disabled,
+    .owl-carousel .owl-next.disabled {
+      pointer-events: none;
+      background-color: #1f2937;
+    }
+
+    .owl-carousel .prev-slide {
+      background: url(images/next-2.svg) no-repeat scroll 0 0;
+      left: -86px;
+    }
+
+    .owl-carousel .next-slide {
+      background: url(images/prev-2.svg) no-repeat scroll 0px 0px;
+      right: -86px;
+    }
+
+    .container-items {
+      display: flex;
+      width: 100%;
+
+      .items {
+        background-color: #f3f4f6;
+        padding: 2rem;
+        width: 30%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+
+        .container-stars {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 40px;
+            height: 20px;
+          }
+        }
+
+        .content-description p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 150%;
+          color: #111827;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          padding: 1.5rem;
+        }
+
+        .avatar-content {
+          text-align: center;
+
+          .container-image-avatar {
+            display: flex;
+            justify-content: center;
+            img {
+              width: 65px;
+              height: 90px;
+            }
+          }
+
+          h3 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #111827;
+          }
+        }
+      }
+    }
+
+      
+    
+  }
 }
